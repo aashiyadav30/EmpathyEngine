@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+gunicorn
+pydantic
+transformers
+torch
+pyttsx3
+requests
+python-dotenv

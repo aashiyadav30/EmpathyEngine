@@ -1,0 +1,163 @@
+.app-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 56px 32px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.header-eyebrow {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-bottom: 16px;
+}
+
+.app-header h1 {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  line-height: 1.1;
+  margin: 0 0 14px;
+  color: var(--text-primary);
+}
+
+.header-description {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.error-banner {
+  background: #FFE5E5;
+  border: 1px solid #FFB8B8;
+  color: #A60000;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 32px;
+  font-size: 0.95rem;
+}
+
+.app-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.content-grid {
+  display: contents;
+}
+
+.left-panel,
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.input-section,
+.emotion-section,
+.comparison-section,
+.insights-section {
+  width: 100%;
+}
+
+.comparison-section,
+.insights-section {
+  padding-top: 32px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.section-intro {
+  margin-bottom: 24px;
+}
+
+.section-intro h2 {
+  font-size: 1.4rem;
+  margin: 0 0 8px;
+  color: var(--text-primary);
+}
+
+.section-intro p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.player-item h3 {
+  font-size: 1.1rem;
+  margin: 0 0 4px;
+  color: var(--text-primary);
+}
+
+.player-item p {
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+  margin: 0 0 16px;
+}
+
+.emotion-explanation {
+  margin-top: 20px;
+}
+
+.emotion-explanation h3 {
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.emotion-explanation p {
+  margin: 0 0 8px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.emotion-explanation p:last-child {
+  margin-bottom: 0;
+}
+
+.emotion-explanation strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+
+.loading-spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(26, 26, 26, 0.2);
+  border-top-color: var(--text-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 40px 20px;
+  }
+
+  .insights-section {
+    grid-template-columns: 1fr;
+  }
+}

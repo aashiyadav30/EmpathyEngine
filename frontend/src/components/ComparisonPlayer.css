@@ -1,0 +1,104 @@
+.player-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.player-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.download-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+.download-link:hover {
+  color: var(--accent-primary);
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.play-button {
+  background: var(--text-primary);
+  color: var(--bg-inner);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.play-button:hover {
+  transform: scale(1.06);
+  background: var(--accent-primary);
+}
+
+.play-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.progress-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+  cursor: pointer;
+  position: relative;
+  transition: height 0.2s ease;
+}
+
+.progress-bar:hover {
+  height: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--text-primary);
+  border-radius: 999px;
+  transition: width 0.1s linear;
+}
+
+.emotional-card .progress-fill {
+  background: var(--accent-primary);
+}
+
+.time-display {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  min-width: 38px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
